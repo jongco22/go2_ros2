@@ -62,21 +62,21 @@ class Go2NodeFactory:
             DeclareLaunchArgument('start_mode', default_value='0', description='Go2 start mode (0: StandUp, 7: Sit, etc.)'),
         ]
     
-    # def create_driver_nodes(self) -> List[Node]:
-    #     """Create the core Go2 hardware driver node."""
-    #     start_mode = LaunchConfiguration('start_mode')
+    def create_driver_nodes(self) -> List[Node]:
+        """Create the core Go2 hardware driver node."""
+        start_mode = LaunchConfiguration('start_mode')
 
-    #     return []
-    #     return [
-    #         Node(
-    #             package='unitree_ros2_example',
-    #             executable='go2_sport_client',
-    #             name='go2_sport_client_node',
-    #             output='screen',
-    #             # Use LaunchConfiguration to pass the start_mode argument
-    #             arguments=[start_mode]
-    #         )
-    #     ]
+        return []
+        return [
+            Node(
+                package='unitree_ros2_example',
+                executable='go2_sport_client',
+                name='go2_sport_client_node',
+                output='screen',
+                # Use LaunchConfiguration to pass the start_mode argument
+                arguments=[start_mode]
+            )
+        ]
     
     def odom_tf_publisher_nodes(self) -> List[Node]:
         """Create odom_tf_publisher nodes"""
