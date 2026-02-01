@@ -1,7 +1,7 @@
 # 🐕Go2 Robot SLAM & Navigation Guide
 
 ```
-git clone https://git.irasc.kro.kr/irasc-lab/go2_humble.git
+git clone -b humble https://git.irasc.kro.kr/irasc-lab/go2_humble.git
 ```
 ## 🐳Docker
 ```
