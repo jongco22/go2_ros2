@@ -3,11 +3,17 @@
 ```
 git clone -b humble https://github.com/jongco22/go2_ros2.git
 ```
+
+## GUI
+vnc
+http://localhost:6080/
+
 ## 🐳Docker
 ```
 cd docker
 docker compose up -d --build
 ```
+
 ## 🗺️ 1. SLAM (Mapping)
 
 ```bash
