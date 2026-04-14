@@ -3,7 +3,7 @@ services:
     container_name: go2_ros2_sdk
     build:
       context: ..
-      dockerfile: docker/Dockerfile.back
+      dockerfile: docker/Dockerfile
     tty: true
     restart: always
     cap_add:
